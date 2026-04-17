@@ -16,29 +16,27 @@ export default function WebsiteExpertiseBanner() {
       <div
         className="
           relative w-full max-w-6xl mx-auto 
-          bg-linear-to-r from-[#001020] via-[#001E3C] to-[#002B52]
+          bg-gradient-to-r from-[#001020] via-[#001E3C] to-[#002B52]
           rounded-3xl overflow-hidden border border-[#0088CC]/50 
           shadow-[0_0_40px_10px_rgba(0,174,239,0.25),inset_0_0_60px_10px_rgba(0,100,200,0.3)]
           before:absolute before:inset-0 before:rounded-3xl
-          before:bg-linear-to-r before:from-[#00AEEF]/20 before:via-[#0088CC]/25 before:to-[#003C7A]/15
-          before:blur-3xl before:opacity-90
+          before:bg-gradient-to-r before:from-[#00AEEF]/20 before:via-[#0088CC]/25 before:to-[#003C7A]/15
+          before:blur-xl before:opacity-30
           after:absolute after:inset-0 after:rounded-3xl
           after:shadow-[0_0_80px_20px_rgba(0,174,239,0.3)]
         "
       >
         {/* 🌊 Inner Card */}
         <div
-          className="
-            relative z-10
+          className="relative z-20
             w-full max-w-5xl mx-auto 
-            bg-linear-to-r from-[#001C3A] to-[#00305A]
+            bg-gradient-to-r from-[#001C3A] to-[#00305A]
             rounded-2xl border border-[#00AEEF]/40 
             shadow-[0_0_50px_rgba(0,174,239,0.3),inset_0_0_25px_rgba(0,174,239,0.2)]
             flex flex-col md:flex-row justify-between items-center
             px-5 sm:px-8 md:px-12 lg:px-14 
             py-6 sm:py-8 md:py-10 
-            gap-6 sm:gap-8 my-3 sm:my-4 md:my-6
-          "
+            gap-6 sm:gap-8 my-3 sm:my-4 md:my-6"
         >
           {/* 🟦 Left Text with Glow */}
           <div className="flex-1 text-center md:text-left">
@@ -56,7 +54,7 @@ export default function WebsiteExpertiseBanner() {
             </h2>
             <p
               className="
-                text-gray-250 text-[0.99rem] sm:text-base md:text-lg 
+                text-gray-300 text-[0.99rem] sm:text-base md:text-lg 
                 mt-3 sm:mt-4 
                 max-w-md mx-auto md:mx-0
                 drop-shadow-[0_0_10px_rgba(0,174,239,0.4)]
@@ -101,7 +99,7 @@ export default function WebsiteExpertiseBanner() {
             absolute bottom-0 left-1/2 -translate-x-1/2 
             w-[80%] sm:w-[70%] md:w-[60%] 
             h-1 
-            bg-linear-to-r from-[#00C6FF] via-[#00AEEF] to-[#007FFF] 
+            bg-gradient-to-r from-[#00C6FF] via-[#00AEEF] to-[#007FFF] 
             rounded-full opacity-95
             shadow-[0_0_25px_rgba(0,174,239,0.9),0_0_50px_rgba(0,174,239,0.5)]
           "
