@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+  /* padding-left: 15px; */
+  /* padding-right: 15px; 
+  } */ 
+
+/* Remove unwanted space below footer */
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050a14; /* optional: match footer background */
+  /* display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+} */ 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* height: 100%; */
+  overflow-x: hidden;
+  /* background-color: #050a14; */
+}
+
+
+/* body > main {
+  flex: 1;
+} */
+
+
+
+
+main {
+  flex: 1 0 auto; /* allow main to expand but not overlap */
+}
+
+footer {
+  flex-shrink: 0; /* prevents footer from collapsing over content */
+}
+
+footer {
+  margin-bottom: 0;
+}
+
+/* main {
+  flex: 1;
+}
+
+#__next, main {
+  min-height: 100%;
+} */
+
+
+
+@media (max-width: 640px) {
+  .top-bar-icons {
+    gap: 4px !important;
+  }
+}
+
+/* @layer base {
+  @media (max-width: 640px) {
+    p, span, li, a {
+      font-size: 1.15rem !important;
+    }
+  }
+} */
+
+
+
+/* === FIX HEADER SCROLL OVERLAP === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Content ko header ke neeche push karne ke liye */
+/* body {
+  padding-top: 80px; }/* header ki height jitni */
+
+
+
+
+  /* Push content below fixed header */
+body {
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 40px;
+  }
+}
