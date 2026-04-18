@@ -2,12 +2,9 @@
 const nextConfig = {
   experimental: {
     serverActions: {},
-    reactCompiler: true,
   },
 
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  reactCompiler: true,
 
   images: {
     remotePatterns: [
